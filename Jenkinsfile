@@ -1,8 +1,10 @@
 @Library('shared-library') _
 
 pipeline {
-    agent any
-
+    node { 
+             label 'jenkins-slave'
+         }
+    }
     environment {
         DOCKER_IMAGE_NAME = "omarrouby/gradle-app"
         DOCKERHUB_CREDENTIALS_ID = "dockerhub"
