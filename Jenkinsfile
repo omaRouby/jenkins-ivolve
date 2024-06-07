@@ -1,9 +1,8 @@
 @Library('shared-library') _
 
 pipeline {
-    node { 
-             label 'jenkins-slave'
-         }
+    agent { 
+        label 'ec2-slave'
     }
     environment {
         DOCKER_IMAGE_NAME = "omarrouby/gradle-app"
