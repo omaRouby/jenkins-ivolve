@@ -20,21 +20,22 @@ This README provides a detailed guide on setting up a Jenkins pipeline to build 
 1. **Launch EC2 Instance**:
     - Launch an EC2 instance with a suitable AMI (e.g., Ubuntu).
     - Ensure the instance has appropriate security group settings to allow Jenkins master to connect to it.
-![](https://github.com/omaRouby/jenkins-ivolve/blob/main/pictures/ec2-instance.png)
+- ![](https://github.com/omaRouby/jenkins-ivolve/blob/main/pictures/ec2-instance.png)
 2. **Install Docker on EC2**:
     ```sh
     sudo apt-get update
     sudo apt-get install -y docker.io
     sudo usermod -aG docker ubuntu
     ```
-![](https://github.com/omaRouby/jenkins-ivolve/blob/main/pictures/docker.png)
+- ![](https://github.com/omaRouby/jenkins-ivolve/blob/main/pictures/docker.png)
 3. **Install Java on EC2**:
     ```sh
     sudo apt-get install -y openjdk-11-jdk
     ```
 ![](https://github.com/omaRouby/jenkins-ivolve/blob/main/pictures/open-jdk.png)
 4. **Install OC CLI ov EC2**
-![](https://github.com/omaRouby/jenkins-ivolve/blob/main/pictures/oc-cli.png)
+
+- ![](https://github.com/omaRouby/jenkins-ivolve/blob/main/pictures/oc-cli.png)
 
 #### Step 2: Configure DockerHub Credentials in Jenkins
 
